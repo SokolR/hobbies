@@ -1,6 +1,6 @@
 package com.sokol.ruslan.hobbies;
 
-public class Hobby {
+public abstract class Hobby {
 
     private String name;
     private byte priority;
@@ -109,9 +109,7 @@ public class Hobby {
         isFavorite = favorite;
     }
 
-    public String tellAboutHobby() {
-        return toString();
-    }
+    public abstract String tellAboutHobby();
 
     @Override
     public String toString() {
